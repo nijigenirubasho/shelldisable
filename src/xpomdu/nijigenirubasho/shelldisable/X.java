@@ -17,7 +17,7 @@ public class X implements IXposedHookLoadPackage
 		String whitelist= xsp.getString("whitelist", null);
 		if (p1.packageName.equals("de.robv.android.xposed.installer"))
 		{
-			Log.d(tag, "エクスポスト発見した、フックしたくない。");
+			Log.d(tag, "エクスポスド発見した、フックしたくない。");
 			return;
 		}
 		if (whitelist.contains(p1.packageName))
