@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/mainEditText1"
+		android:maxLines="15"
+		android:scrollbars="vertical"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="保存并应用"
+			android:id="@+id/mainButton1"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:text="将应用的包名换行添加进编辑框并保存以作为白名单。"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="包名获取"
+			android:id="@+id/mainButton2"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:text="本应用是xposed模块，要安装xposed才可使用和查看说明"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="不准笑！\n这是一个可以禁用几乎所有应用shell命令的xposed模块。\n说几乎的原因是因为作者似乎找到能够绕过这个限制去执行shell的方法，所以并不保证对所有应用都有效。\n总之先开了坑再说，安装的应用也请再三选择。。。\n启用后，使用shell相关代码的应用可能会发生未知异常。\n如果白名单为空将作用于所有应用，在这个界面修改白名单。可以查看以no_shell为标签的log确认拦截记录。\n开发者不对使用本应用所造成的任何后果负责。\n开发者：@二次元居る場所　coolapk"/>
+
+</LinearLayout>
+
