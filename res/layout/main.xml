@@ -52,7 +52,20 @@
 	<TextView
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
-		android:text="不准笑！\n这是一个可以禁用几乎所有应用shell命令的xposed模块。\n说几乎的原因是因为作者似乎找到能够绕过这个限制去执行shell的方法，所以并不保证对所有应用都有效。\n总之先开了坑再说，安装的应用也请再三选择。。。\n启用后，使用shell相关代码的应用可能会发生未知异常。\n如果白名单为空将作用于所有应用，在这个界面修改白名单。可以查看以no_shell为标签的log确认拦截记录。\n开发者不对使用本应用所造成的任何后果负责。\n开发者：@二次元居る場所　coolapk"/>
+		android:text="注意：启用之后部分应用可能会出现未知异常。推荐先设置好白名单再启用本模块，开发者不对使用本模块的任何后果负责。"
+		android:textColor="#FF0000"/>
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="这是一个可以禁用应用框架层中应用使用shell的xposed模块。\n如果白名单为空将作用于所有应用，在这个界面修改白名单。可以查看以no_shell为标签的log确认拦截记录。\n包名获取中可以搜索关键字，搜索完选中包名然后加入。如果没有找到已经安装的应用，请拖到开头第一行点击一下再搜索。\n开发者：@二次元居る場所　coolapk"
+			android:scrollbars="vertical"/>
+
+	</ScrollView>
 
 </LinearLayout>
 

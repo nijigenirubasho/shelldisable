@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="xpomdu.nijigenirubasho.shelldisable"
-    android:versionCode="3"
-    android:versionName="1.3" >
+    android:versionCode="4"
+    android:versionName="2.0_official" >
 	<uses-sdk 
         android:minSdkVersion="8" 
         android:targetSdkVersion="21" />
@@ -27,7 +27,7 @@
 			android:value="shell功能实现的开关"/>
         <meta-data
 			android:name="xposedminversion"
-			android:value="54"/>
+			android:value="44"/>
     </application>
 
 </manifest>
