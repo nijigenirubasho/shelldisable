@@ -148,9 +148,10 @@ public class ConfigActivity extends Activity
 	{
 		String ret = "";
 		PackageManager pm = getPackageManager();
-		List ls = pm.getInstalledPackages(0);
-		for (PackageInfo pi : ls)
+		List<PackageInfo> ls = pm.getInstalledPackages(0);
+		for (int i=0;i < ls.size();i++)
 		{
+			PackageInfo pi=ls.get(i);
 			if (!isOnlyGetPackageName)
 			{
 				if ((pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0)	
